@@ -1,0 +1,12 @@
+README.md
+setup.py
+fastapi_items_api.egg-info/PKG-INFO
+fastapi_items_api.egg-info/SOURCES.txt
+fastapi_items_api.egg-info/dependency_links.txt
+fastapi_items_api.egg-info/requires.txt
+fastapi_items_api.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_api.py
+tests/test_items.py
+tests/test_main.py
