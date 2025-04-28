@@ -30,7 +30,6 @@ def test_update_item(client):
         "/items", json={"name": "To Update", "price": 1.99, "in_stock": True}
     )
     item_id = create_response.json()["id"]
-    
     # Mettre à jour l'item
     update_response = client.put(
         f"/items/{item_id}", json={"name": "Updated", "price": 2.99, "in_stock": False}
