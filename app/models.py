@@ -3,6 +3,7 @@ from sqlalchemy.orm import declarative_base  # Nouvelle importation
 
 Base = declarative_base()
 
+
 class ItemDB(Base):
     __tablename__ = "items"
 
