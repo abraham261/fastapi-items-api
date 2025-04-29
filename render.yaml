@@ -4,11 +4,6 @@
     python:
       version: 3.11.11
     buildCommand: |
-      if not exist requirements.txt (
-        echo !!! ERREUR: requirements.txt introuvable !!!
-        dir /s
-        exit 1
-      )
       python -m pip install --upgrade pip
       pip install -r requirements.txt
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
