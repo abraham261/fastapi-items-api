@@ -1,6 +1,9 @@
 services:
   - type: web
     name: fastapi-items-api
-    runtime: python
-    buildCommand: "poetry install --no-root"
-    startCommand: "poetry run uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    python:
+      version: 3.12  # À adapter à votre version
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
