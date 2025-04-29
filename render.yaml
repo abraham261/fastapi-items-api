@@ -2,7 +2,7 @@ services:
   - type: web
     name: fastapi-items-api
     python:
-      version: 3.12  # À adapter à votre version
+      version: 3.11.11  # À adapter à votre version
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
